@@ -16,11 +16,12 @@ export default function About() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="aspect-square rounded-2xl bg-slate-100 overflow-hidden relative">
-                            {/* Placeholder for about image */}
-                            <div className="absolute inset-0 flex items-center justify-center bg-slate-200 text-slate-400">
-                                <span className="text-lg font-medium">About Us Image</span>
-                            </div>
+                        <div className="aspect-square rounded-2xl overflow-hidden relative shadow-2xl">
+                            <img
+                                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop"
+                                alt="Doctor with Patient"
+                                className="object-cover w-full h-full"
+                            />
                         </div>
                         <motion.div
                             className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 max-w-xs hidden lg:block"
@@ -35,7 +36,7 @@ export default function About() {
                                 </div>
                                 <div>
                                     <p className="text-2xl font-bold text-slate-900">15+</p>
-                                    <p className="text-sm text-slate-500">Years Experience</p>
+                                    <p className="text-sm text-slate-500">Years of Service</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -48,32 +49,32 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                            Leading the Way in <span className="text-sky-500">Medical Excellence</span>
+                            More Than Just a Clinic, <span className="text-sky-500">We Are a Community</span>
                         </h2>
                         <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                            At MediCare, we are committed to providing the highest quality healthcare services to our community. Our team of dedicated professionals works tirelessly to ensure your well-being.
+                            At MediCare, we understand that visiting a doctor can be stressful. That's why we've created an environment that feels more like a home than a hospital. Our team takes the time to get to know you, listening to your concerns and explaining your options in plain language.
                         </p>
 
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
                                 <CheckCircle className="h-6 w-6 text-sky-500 flex-shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-slate-900">Modern Technology</h3>
-                                    <p className="text-slate-600">We use the latest medical technology for accurate diagnosis and treatment.</p>
+                                    <h3 className="font-bold text-slate-900">Patient-Centered Approach</h3>
+                                    <p className="text-slate-600">Your comfort and understanding are our top priorities.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
                                 <CheckCircle className="h-6 w-6 text-sky-500 flex-shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-slate-900">Professional Doctors</h3>
-                                    <p className="text-slate-600">Our team consists of highly qualified and experienced medical specialists.</p>
+                                    <h3 className="font-bold text-slate-900">Experienced Specialists</h3>
+                                    <p className="text-slate-600">Access to top-tier medical professionals across various fields.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
                                 <CheckCircle className="h-6 w-6 text-sky-500 flex-shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-slate-900">Affordable Care</h3>
-                                    <p className="text-slate-600">We believe quality healthcare should be accessible to everyone.</p>
+                                    <h3 className="font-bold text-slate-900">Transparent Pricing</h3>
+                                    <p className="text-slate-600">No hidden fees. We believe in clear, upfront communication about costs.</p>
                                 </div>
                             </div>
                         </div>

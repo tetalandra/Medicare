@@ -6,32 +6,32 @@ import { motion } from "framer-motion";
 const services = [
     {
         title: "Cardiology",
-        description: "Comprehensive heart care including diagnostics, treatment, and rehabilitation.",
+        description: "Your heart is in good hands. We provide comprehensive care, from prevention to rehabilitation.",
         icon: Heart,
     },
     {
         title: "Pediatrics",
-        description: "Specialized care for infants, children, and adolescents.",
+        description: "Gentle, expert care for your little ones, supporting their growth from infancy through adolescence.",
         icon: Baby,
     },
     {
         title: "Neurology",
-        description: "Expert diagnosis and treatment for disorders of the nervous system.",
+        description: "Advanced solutions for complex neurological conditions, delivered with compassion and expertise.",
         icon: Brain,
     },
     {
         title: "General Medicine",
-        description: "Primary care services for all ages, focusing on prevention and wellness.",
+        description: "Your primary partner in health. We focus on keeping you well through regular check-ups and preventive care.",
         icon: Stethoscope,
     },
     {
         title: "Ophthalmology",
-        description: "Advanced eye care services including surgery and vision correction.",
+        description: "See the world clearly. Our vision experts offer cutting-edge treatments for all your eye care needs.",
         icon: Eye,
     },
     {
         title: "Diagnostics",
-        description: "State-of-the-art laboratory and imaging services for accurate diagnosis.",
+        description: "Fast, accurate results you can trust. Our state-of-the-art lab ensures we get to the root of the problem.",
         icon: Activity,
     },
 ];
@@ -86,7 +86,8 @@ export default function Services() {
                         <motion.div
                             key={index}
                             variants={item}
-                            className="p-8 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100 group"
+                            className="p-8 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 border border-slate-100 group cursor-pointer"
+                            whileHover={{ y: -5 }}
                         >
                             <div className="w-14 h-14 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-500 transition-colors duration-300">
                                 <service.icon className="h-7 w-7 text-sky-600 group-hover:text-white transition-colors duration-300" />

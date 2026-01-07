@@ -16,20 +16,20 @@ export default function Hero() {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="inline-block px-4 py-1.5 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-6">
-                            Trusted by 10,000+ Patients
+                            Trusted by 10,000+ Families
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                            Your Health is Our <span className="text-sky-500">Top Priority</span>
+                            Compassionate Care, <span className="text-sky-500">Close to Home</span>
                         </h1>
                         <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                            Experience world-class healthcare with our team of expert doctors and state-of-the-art facilities. We are dedicated to providing personalized care for you and your family.
+                            We believe that great healthcare starts with listening. Our dedicated team of specialists is here to provide personalized, expert care that puts you and your family first.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 href="#contact"
-                                className="inline-flex items-center justify-center px-6 py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-colors font-medium"
+                                className="inline-flex items-center justify-center px-6 py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-colors font-medium shadow-lg shadow-sky-200"
                             >
-                                Book Appointment
+                                Book an Appointment
                                 <ArrowRight className="ml-2 h-5 w-5" />
                             </Link>
                             <Link
@@ -61,26 +61,26 @@ export default function Hero() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        {/* Abstract visual representation since we don't have an image asset yet */}
-                        <div className="relative w-full aspect-square rounded-full bg-sky-100/50 flex items-center justify-center overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-tr from-sky-200/30 to-transparent rounded-full animate-pulse" />
+                        <div className="relative w-full aspect-square rounded-3xl overflow-hidden shadow-2xl">
+                            <img
+                                src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?q=80&w=2787&auto=format&fit=crop"
+                                alt="Medical Team"
+                                className="object-cover w-full h-full"
+                            />
                             <motion.div
-                                className="w-3/4 h-3/4 bg-white rounded-2xl shadow-xl flex items-center justify-center p-8"
-                                animate={{ rotate: [0, -6, 0] }}
-                                transition={{
-                                    rotate: {
-                                        repeat: Infinity,
-                                        duration: 5,
-                                        ease: "easeInOut"
-                                    }
-                                }}
+                                className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-white/20"
+                                initial={{ y: 50, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
                             >
-                                <div className="text-center">
-                                    <div className="w-16 h-16 bg-sky-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                                        <HeartPulse className="h-8 w-8 text-sky-500" />
+                                <div className="flex items-center gap-4">
+                                    <div className="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <HeartPulse className="h-6 w-6 text-sky-500" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-2">Expert Care</h3>
-                                    <p className="text-slate-500">Leading medical professionals at your service</p>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-slate-900">Top-Rated Care</h3>
+                                        <p className="text-slate-600 text-sm">Voted #1 in Patient Satisfaction</p>
+                                    </div>
                                 </div>
                             </motion.div>
                         </div>
